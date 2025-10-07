@@ -39,20 +39,20 @@ spec:
           value: ArgoCD-GitHub
         - key: BillingMode
           value: OnDemand
-    # - name: analytics
-    #   partitionKey: user_id
-    #   sortKey: event_timestamp
-    #   billingMode: ON_DEMAND
-    #   pointInTimeRecovery: true
-    #   tags:
-    #     - key: Environment
-    #       value: Dev
-    #     - key: DeployedBy
-    #       value: ArgoCD-GitHub
-    #     - key: BillingMode
-    #       value: OnDemand
-    #     - key: Purpose
-    #       value: Analytics
+    - name: analytics
+      partitionKey: user_id
+      sortKey: event_timestamp
+      billingMode: ON_DEMAND
+      pointInTimeRecovery: true
+      tags:
+        - key: Environment
+          value: Dev
+        - key: DeployedBy
+          value: ArgoCD-GitHub
+        - key: BillingMode
+          value: OnDemand
+        - key: Purpose
+          value: Analytics
   tags:
     - key: Project
       value: RivetDemo
